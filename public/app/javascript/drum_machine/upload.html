@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+		crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+    <script src="./fbStorage.js"></script>
+    
+    <title>Upload Form</title>
+</head>
+<body >
+    <form action="" onsubmit="return doSomething();">
+        <input id="audioFile" type="file">
+        <input type="submit">
+    </form>
+     
+</body>
+</html>
+
+
+<!--
+<script>
+function updateSize() {
+  var nBytes = 0,
+      oFiles = document.getElementById("uploadInput").files,
+      nFiles = oFiles.length;
+  for (var nFileId = 0; nFileId < nFiles; nFileId++) {
+    nBytes += oFiles[nFileId].size;
+  }
+  var sOutput = nBytes + " bytes";
+  // optional code for multiples approximation
+  for (var aMultiples = ["KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"], nMultiple = 0, nApprox = nBytes / 1024; nApprox > 1; nApprox /= 1024, nMultiple++) {
+    sOutput = nApprox.toFixed(3) + " " + aMultiples[nMultiple] + " (" + nBytes + " bytes)";
+  }
+  // end of optional code
+  document.getElementById("fileNum").innerHTML = nFiles;
+  document.getElementById("fileSize").innerHTML = sOutput;
+}
+</script>
+
+<body onload="updateSize();">
+<form name="uploadForm">
+<p><input id="uploadInput" type="file" name="myFiles" onchange="updateSize();" multiple> selected files: <span id="fileNum">0</span>; total size: <span id="fileSize">0</span></p>
+<p><input type="submit" value="Send file"></p>-->

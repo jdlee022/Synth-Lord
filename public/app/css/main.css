@@ -1,0 +1,634 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+.visualizer {background: black;border: white 2px solid;border-radius: 4px;height: 95%;max-width: 100%;margin-left: -10px;margin-top: 20px;}
+
+@font-face {
+    font-family: '8-bit-font'; /*a name to be used later*/
+    src: url('../../source-files/8-bit-font/PressStart2P.ttf'); /*URL to font*/
+}
+
+#header-container{
+  background: black;
+  opacity: 0.7;
+  margin: 0 auto;
+  font-family: '8-bit-font';
+  color: red;
+}
+a, a:visited{
+  color: red;
+  font-size: 12px; 
+  text-decoration: none;
+}
+a:active, a:hover, a:visited:hover{
+  color: rgb(69.1%, 0%, 0%);
+  text-decoration: none;
+}
+
+#synth-lord{
+  padding: 10px;
+}
+
+.linkContainer { 
+    height: 55px; 
+    line-height: 55px;
+}
+
+.linkContainer a,h2 {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+body {
+  background-image: url('http://www.wood-database.com/wp-content/uploads/black-walnut-burl-s.jpg');
+}
+
+select{
+  background-color: red;
+  color:white;
+	background-image: -webkit-linear-gradient(right, rgb(15.2%, 15.2%, 15.2%),rgb(28.4%, 28.4%, 28.4%) 50%, rgb(15.2%, 15.2%, 15.2%) 100%);
+}
+
+h3, h4  {
+
+  color:	#D5AD6D; /*if no support for background-clip*/
+	
+	background: -webkit-linear-gradient(transparent, transparent),
+             -webkit-linear-gradient(top, rgba(213,173,109,1) 0%, rgba(213,173,109,1) 26%, rgba(226,186,120,1) 35%, rgba(163,126,67,1) 45%, rgba(145,112,59,1) 61%, rgba(213,173,109,1) 100%);
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+div.setting-group {
+    background-image: url('../img/black_texture.jpg');
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: -10px;
+    border: 5px  solid silver;
+    box-shadow: 0px 3px 10px 0px black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    height: 300px;
+    
+}
+
+.visualizer {
+    background: black;
+    border: white 2px solid;
+    border-radius: 4px;
+    height: 95%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+  #myCanvas{
+    height: 100%;
+    width: 100%;
+  }
+
+
+label.slider-label {
+      margin-top: 40px;
+      margin-right: 0px;
+}
+
+div#master.setting-group {
+  min-width: 350px;
+  background-image: url('http://www.aircraftpanel.com/gallery/black-textured-hires.jpg');
+    padding: 10px;
+    border: 5px  solid silver;
+    box-shadow: 0px 3px 10px 0px black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+}
+
+div#osc1.setting-group {
+  margin-left: 0px;
+  
+}
+div#osc2.setting-group {
+  margin-left: 0px;
+  
+}
+
+
+div#drum-machine.setting-group {
+ width: 100%;
+ margin-left: 0px;
+ height: auto;
+}
+
+
+
+slider-label {
+  margin-top: 100px;
+}
+
+
+
+.vertical-slider {
+  -webkit-appearance: slider-vertical;
+  height: 80px;
+  margin-top: 15px;
+  padding: 0;
+  width: 15px;
+}
+
+
+.delay{
+    border: 2px solid black;
+}
+
+/*Drum machine styles*/
+
+
+label#drumVolume {
+    margin-left: 870px;
+}
+
+.trackList {
+    margin-left: 110px;
+    margin-top: 10px;
+}
+
+
+div#samplePlayerRow {
+    margin-top: 20px;
+}
+
+.drumSoundBtns.col-sm-8 {
+  display: flex;
+  align-items: center;
+  }
+
+button.drumBtn.btn.btn-default {
+    background-color: black;
+    color:  white;
+    text-align: center;
+    word-wrap: break-word;
+    height: 120px;
+    width: 120px;
+    margin-bottom: 25px;
+    margin-left: 36px;
+    margin-right: 36px;
+    box-shadow: 0 0 20px 0px black;
+    box-sizing: border-box;
+}
+
+
+#tuna-container{
+   background-image: url('http://www.aircraftpanel.com/gallery/black-textured-hires.jpg');
+    padding: 25px;
+    margin-top: 20px;
+    border: 5px  solid silver;
+    box-shadow: 0px 3px 10px 0px black;
+    color: white;
+    width: 100%;
+    margin-left: 0px;
+}
+
+div.col-md-12.text-center {
+  margin-left: 0px;
+}
+
+input#drum-track-gain {
+    margin-bottom: 90px;
+}
+
+input#drum-sound-gain {
+    margin-bottom: 90px;
+}
+
+
+/*======RED LED CSS================*/
+.led-red-on{
+  -webkit-animation: blinkRed 1.5s infinite;
+  -moz-animation: blinkRed 1.5s infinite;
+  -ms-animation: blinkRed 1.5s infinite;
+  -o-animation: blinkRed 1.5s infinite;
+  animation: blinkRed 1.5s infinite;
+}
+
+@keyframes blinkRed {
+  from {
+    background-color: rgb(0, 255, 0);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(5.2%, 33.5%, 0%) 0 -1px 9px, rgb(6.7%, 42.9%, 0%) 0 2px 0;
+  }
+  50% {
+    background-color: rgb(6.2%, 39.8%, 0%);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(5.2%, 33.5%, 0%) 0 -1px 9px, rgb(6.7%, 42.9%, 0%) 0 2px 0;
+  }
+  to {
+    background-color: rgb(0, 255, 0);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset rgb(5.2%, 33.5%, 0%) 0 -1px 9px, rgb(6.7%, 42.9%, 0%) 0 2px 0;
+  }
+}
+
+.led-red {
+  margin-left:82%;
+  width: 24px;
+  height: 24px;
+    background-color: #A00;
+    border-radius: 50%;
+    box-shadow: #000 0 -1px 7px 1px, inset #600 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;
+  /*background-color: #F00;*/
+  border-radius: 50%;
+  /*box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #441313 0 -1px 9px, rgba(255, 0, 0, 0.5) 0 2px 12px;*/
+
+}
+
+/*=======END OF RED LED BTNS=======*/
+
+
+
+
+li {
+        box-shadow: 0px 1px 6px 0px black; 
+   
+}
+
+.drumlit {
+border-color: #ff3737;
+border-style: solid;
+border-width: 3px;
+transition: width 0s linear;
+    -ms-transition: width 0s linear;
+    -moz-transition: width 0s linear;
+    -webkit-transition: width 0s linear;
+    -o-transition: width 0s linear;
+}
+
+.drumlit.out {
+    transition: width 0s linear;
+    -ms-transition: width 0s linear;
+    -moz-transition: width 0s linear;
+    -webkit-transition: width 0s linear;
+    -o-transition: width 0s linear;
+}
+
+img#startTrack {
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: 33%;
+    margin-top: -30px;
+}
+
+img#stopTrack {
+  max-width: 80px;
+  max-height: 80px;
+  margin-top: -17px;
+
+  }
+
+
+input[type='range'] {
+	/*margin-top: 60px;*/
+	writing-mode: bt-lr;
+	width: 50px;
+	height: 150px;
+	padding: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+	input[type='range'] {
+		-webkit-appearance: none;
+		-webkit-transform: rotate(-90deg);
+		width: 150px;
+		height: 6px;
+		/*margin-top: 160px;*/
+		outline: 0;
+		border-radius: 5px;
+		/*background-color: silver;*/
+		box-shadow: inset 1px 1px 0 1px #6d6d6d;
+	background-image: -webkit-linear-gradient(left, rgb(40, 40, 40), rgb(70, 70, 70) 10%, rgb(80, 80, 80) 20%, rgb(90, 90, 90) 30%,  rgb(100, 100, 100) 40%,rgb(110, 110, 110) 50%, rgb(130, 130, 130) 60%, rgb(140, 140, 140) 70%, rgb(150, 150, 150) 80%, rgb(165, 165, 165) 90%, rgb(180, 180, 180) 95%, rgb(200, 200, 200) 100%);
+
+	}
+}
+
+input[type='range']::-ms-track {
+	width: 10px;
+	height: 240px;
+	border-radius: 5px;
+	background-color: #0b0b0b;
+	box-shadow: inset 1px 1px 0 1px #6d6d6d;
+	border: 0;
+}
+
+input[type='range']::-moz-range-track {
+	width: 10px;
+	height: 240px;
+	border-radius: 5px;
+	background-color: #0b0b0b;
+	box-shadow: inset 1px 1px 0 1px #6d6d6d;
+	border: 0;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	width: 50px;
+	height: 20px;
+	-webkit-appearance: none;
+	background-image: -webkit-linear-gradient(left, rgb(40, 40, 40) 5%, rgb(50, 50, 50) 10%, rgb(30, 30, 30) 15%, rgb(20, 20, 20) 47%,  rgb(60, 10, 10)46%,rgb(80, 10, 10) 48%, rgb(120, 20, 10) 49%, rgb(255, 0, 0) 50%, rgb(220, 0, 0) 52%, rgb(120, 0, 0) 54%, #000 53%, rgb(50, 50, 50) 96%, rgb(30, 30, 30));
+	box-shadow: 5px -10px 20px 0 #1a1a1a;
+}
+
+input[type='range']::-ms-thumb {
+	width: 32px;
+	height: 72px;
+	border: 0;
+	box-shadow: -10px -5px 20px 0 #1a1a1a;
+	background-image: -ms-linear-gradient(bottom, rgb(40, 40, 40)5%, rgb(60, 60, 60) 4%, rgb(75, 75, 75) 8%, rgb(80, 80, 80) 47%, rgb(85, 85, 85) 48%, red 52%, #000 53%, rgb(40, 40, 40) 96%, rgb(60, 60, 60));
+}
+
+input[type='range']::-ms-tooltip {
+	display: none;
+}
+
+input[type='range']::-moz-range-thumb {
+	width: 32px;
+	height: 72px;
+	border: 0;
+	box-shadow: -10px -5px 20px 0 #1a1a1a;
+	background-image: -moz-linear-gradient(bottom, #0f0f0f, #2e2e2e 4%, silver 8%, #000 47%, lightred 48%, #808080 52%, #000 53%, #1a1a1a 96%, #2e2e2e);
+	border-radius: 0;
+}
+
+#osc1-detune {
+  position:absolute;
+  top:57%;
+  left:10%;
+}
+.osc1-detune-label{
+  position:absolute;
+  bottom: -65%;
+  left: 21%;
+}
+#osc1-volume{
+  position:absolute;
+  top: 57%;
+  right: 10%;
+}
+.osc1-volume-label{
+  position:absolute;
+  bottom: -65%;
+  right: 21%;
+}
+#osc2-detune{
+  position:absolute;
+  top:71%;
+  left:10%;
+}
+.osc2-detune-label{
+position:absolute;
+bottom: -105%;
+left:21%;
+}
+#osc2-volume{
+  position:absolute;
+  top: 71%;
+  right: 10%;
+}
+.osc2-volume-label{
+  position:absolute;
+  bottom:-104%;
+  right:21%;
+}
+#master-volume{
+  position:absolute;
+  top:46%;
+  left:10%;
+}
+.master-volume-label{
+  position:absolute;
+  bottom: -32%;
+  left: 41%;
+}
+#master-drive{
+  position:absolute;
+  top: 46%;
+  right: -9%;
+}
+.master-drive-label{
+  position:absolute;
+  bottom: -32%;
+  left:47%;
+}
+#filter-frequency{
+  position:absolute;
+  bottom: -32%;
+  left: -24%;
+}
+.filter-frequency-label{
+position:absolute;
+bottom: -177%;
+left: 12%;
+}
+#filter-q{
+  position:absolute;
+  bottom: -32%;
+    left: -28%;
+}
+.filter-q-label{
+  position:absolute;
+  bottom: -177%;
+  left: 40%;  
+}
+#filter-gain{
+  position: absolute;
+  bottom: -32%;
+  left: -28%;
+}
+.filter-gain-label{
+  position: absolute;
+   bottom: -179%;
+  left: 28%;
+}
+/*#chorus-rate{
+  position:absolute;
+  bottom: -72%;
+  left: -24%;
+}*/
+#chorus-feedback, #chorus-rate{
+  position:absolute;
+  bottom: -72%;
+  left: -24%;
+}
+.chorus-rate-label{
+  position: absolute;
+  bottom: -219%;
+  left: 32%;
+}
+/*#chorus-feedback{
+  position:absolute;
+  bottom: -25%;
+  left: -24%;
+}*/
+.chorus-feedback-label{
+  position: absolute;
+  bottom: -219%;
+  left: 15%;
+}
+#chorus-delay{
+  position:absolute;
+  bottom: -72%;
+  left: -29%;
+}
+.chorus-delay-label{
+  position: absolute;
+  bottom: -219%;
+  left: 22%;
+}
+#phaser-rate{
+position:absolute;
+bottom: -72%;
+left: -16%;
+}
+.phaser-rate-label{
+position: absolute;
+bottom: -219%;
+left: 39%;
+}
+#phaser-feedback{
+position:absolute;
+bottom: -72%;
+left: -24%;
+}
+.phaser-feedback-label{
+position: absolute;
+bottom: -219%;
+left: 15%;
+}
+#phaser-depth{
+position:absolute;
+bottom: -72%;
+left: -30%;
+}
+.phaser-depth-label{
+position: absolute;
+bottom: -219%;
+left: 22%;
+}
+
+#delay-rate{
+position:absolute;
+bottom: -72%;
+left: -22%;
+}
+.delay-rate-label{
+position: absolute;
+bottom: -219%;
+left: 35%;
+}
+#delay-feedback{
+position:absolute;
+bottom: -72%;
+left: -30%;
+}
+.delay-feedback-label{
+position: absolute;
+bottom: -219%;
+left: 9%;
+}
+#delay-wet{
+position:absolute;
+bottom: -72%;
+left: -30%;
+}
+.delay-wet-label{
+position: absolute;
+bottom: -219%;
+left: 27%;
+}
+
+/*Styling for Tremelo sliders*/
+#tremolo-rate{
+position:absolute;
+bottom: -78%;
+left: -24%;
+}
+.tremelo-rate-label{
+position: absolute;
+bottom: -219%;
+left: 31%;
+}
+#tremolo-intensity{
+position:absolute;
+bottom: -72%;
+left: -30%;
+}
+.tremelo-intensity-label{
+position: absolute;
+bottom: -219%;
+left: 13%;
+}
+
+#tremolo-phase{
+position:absolute;
+bottom: -72%;
+left: -30%;
+}
+.tremelo-phase-label{
+position: absolute;
+bottom: -219%;
+left: 21%;
+}
+
+/*=== Styling for Bitcrusher sliders===*/
+#bitcrusher-bits{
+  position:absolute;
+  bottom: -72%;
+  left: 6%;
+}
+.bitcrusher-bits-label{
+  position: absolute;
+  bottom: -219%;
+  left: 46%;
+}
+#bitcrusher-normfreq{
+  position:absolute;
+  bottom: -72%;
+  left: -1%;
+}
+.bitcrusher-frequency-label{
+  position: absolute;
+  bottom: -219%;
+  left: 37%;
+}
+
+
+#octave{
+  margin-bottom: 10px;
+}
+
+#preset-picker{
+  margin-bottom: 20px;
+  width: 100px;
+  text-overflow: ellipsis;
+}
+
+#save-preset{
+  font-size: 14px;
+  background: #aa0000;
+  color: white;
+  text-align: center;
+
+}
+#save-preset:hover{
+    color: white;
+    background-color: #e00021;
+    cursor: pointer;
+}
+
+#preset-save{
+  background: black;
+  color: white;
+  margin: 0 auto;
+}
+#preset-save:hover{
+  background: rgb(35.1%, 35.1%, 35.1%);
+  color: white;
+  cursor: pointer;
+}
