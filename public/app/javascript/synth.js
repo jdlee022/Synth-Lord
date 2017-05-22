@@ -3,9 +3,6 @@
  * The PolyWad is stopped when the key is released.
  * 
  * TODO:
- * Samples page
- * Documentation in README
- * Deploy with google
  * get MIDI working with deployment
  * Slider placement w/ bootstrap
  * 
@@ -14,9 +11,8 @@
  * Visualize turns off if multiple buttons are being pressed and then one is released
  * 
  * FIXME:
- * Sliders uncentered on windows (arrange with bootstrap)
- * Drum buttons spike CPU usage
- * Tracks stop playing when page is reloaded after setting change
+ * Drum buttons spike CPU usage.
+ * Tracks stop playing when page is reloaded after setting change.
  */
 
 //Only play notes when modals are closed
