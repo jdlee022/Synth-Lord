@@ -70,7 +70,10 @@ div.setting-group {
     width: 100%;
     text-align: center;
     height: 300px;
-    
+}
+
+.setting-group-tuna{
+  height: 250px;
 }
 
 .visualizer {
@@ -195,14 +198,6 @@ div.col-md-12.text-center {
   margin-left: 0px;
 }
 
-input#drum-track-gain {
-    margin-bottom: 90px;
-}
-
-input#drum-sound-gain {
-    margin-bottom: 90px;
-}
-
 
 /*======RED LED CSS================*/
 .led-red-on{
@@ -285,318 +280,7 @@ img#stopTrack {
   }
 
 
-input[type='range'] {
-	/*margin-top: 60px;*/
-	writing-mode: bt-lr;
-	width: 50px;
-	height: 150px;
-	padding: 0;
-}
 
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-	input[type='range'] {
-		-webkit-appearance: none;
-		-webkit-transform: rotate(-90deg);
-		width: 150px;
-		height: 6px;
-		/*margin-top: 160px;*/
-		outline: 0;
-		border-radius: 5px;
-		/*background-color: silver;*/
-		box-shadow: inset 1px 1px 0 1px #6d6d6d;
-	background-image: -webkit-linear-gradient(left, rgb(40, 40, 40), rgb(70, 70, 70) 10%, rgb(80, 80, 80) 20%, rgb(90, 90, 90) 30%,  rgb(100, 100, 100) 40%,rgb(110, 110, 110) 50%, rgb(130, 130, 130) 60%, rgb(140, 140, 140) 70%, rgb(150, 150, 150) 80%, rgb(165, 165, 165) 90%, rgb(180, 180, 180) 95%, rgb(200, 200, 200) 100%);
-
-	}
-}
-
-input[type='range']::-ms-track {
-	width: 10px;
-	height: 240px;
-	border-radius: 5px;
-	background-color: #0b0b0b;
-	box-shadow: inset 1px 1px 0 1px #6d6d6d;
-	border: 0;
-}
-
-input[type='range']::-moz-range-track {
-	width: 10px;
-	height: 240px;
-	border-radius: 5px;
-	background-color: #0b0b0b;
-	box-shadow: inset 1px 1px 0 1px #6d6d6d;
-	border: 0;
-}
-
-input[type='range']::-webkit-slider-thumb {
-	width: 50px;
-	height: 20px;
-	-webkit-appearance: none;
-	background-image: -webkit-linear-gradient(left, rgb(40, 40, 40) 5%, rgb(50, 50, 50) 10%, rgb(30, 30, 30) 15%, rgb(20, 20, 20) 47%,  rgb(60, 10, 10)46%,rgb(80, 10, 10) 48%, rgb(120, 20, 10) 49%, rgb(255, 0, 0) 50%, rgb(220, 0, 0) 52%, rgb(120, 0, 0) 54%, #000 53%, rgb(50, 50, 50) 96%, rgb(30, 30, 30));
-	box-shadow: 5px -10px 20px 0 #1a1a1a;
-}
-
-input[type='range']::-ms-thumb {
-	width: 32px;
-	height: 72px;
-	border: 0;
-	box-shadow: -10px -5px 20px 0 #1a1a1a;
-	background-image: -ms-linear-gradient(bottom, rgb(40, 40, 40)5%, rgb(60, 60, 60) 4%, rgb(75, 75, 75) 8%, rgb(80, 80, 80) 47%, rgb(85, 85, 85) 48%, red 52%, #000 53%, rgb(40, 40, 40) 96%, rgb(60, 60, 60));
-}
-
-input[type='range']::-ms-tooltip {
-	display: none;
-}
-
-input[type='range']::-moz-range-thumb {
-	width: 32px;
-	height: 72px;
-	border: 0;
-	box-shadow: -10px -5px 20px 0 #1a1a1a;
-	background-image: -moz-linear-gradient(bottom, #0f0f0f, #2e2e2e 4%, silver 8%, #000 47%, lightred 48%, #808080 52%, #000 53%, #1a1a1a 96%, #2e2e2e);
-	border-radius: 0;
-}
-
-#osc1-detune {
-  position:absolute;
-  top:57%;
-  left:10%;
-}
-.osc1-detune-label{
-  position:absolute;
-  bottom: -65%;
-  left: 21%;
-}
-#osc1-volume{
-  position:absolute;
-  top: 57%;
-  right: 10%;
-}
-.osc1-volume-label{
-  position:absolute;
-  bottom: -65%;
-  right: 21%;
-}
-#osc2-detune{
-  position:absolute;
-  top:71%;
-  left:10%;
-}
-.osc2-detune-label{
-position:absolute;
-bottom: -105%;
-left:21%;
-}
-#osc2-volume{
-  position:absolute;
-  top: 71%;
-  right: 10%;
-}
-.osc2-volume-label{
-  position:absolute;
-  bottom:-104%;
-  right:21%;
-}
-#master-volume{
-  position:absolute;
-  top:46%;
-  left:10%;
-}
-.master-volume-label{
-  position:absolute;
-  bottom: -32%;
-  left: 41%;
-}
-#master-drive{
-  position:absolute;
-  top: 46%;
-  right: -9%;
-}
-.master-drive-label{
-  position:absolute;
-  bottom: -32%;
-  left:47%;
-}
-#filter-frequency{
-  position:absolute;
-  bottom: -32%;
-  left: -24%;
-}
-.filter-frequency-label{
-position:absolute;
-bottom: -177%;
-left: 12%;
-}
-#filter-q{
-  position:absolute;
-  bottom: -32%;
-    left: -28%;
-}
-.filter-q-label{
-  position:absolute;
-  bottom: -177%;
-  left: 40%;  
-}
-#filter-gain{
-  position: absolute;
-  bottom: -32%;
-  left: -28%;
-}
-.filter-gain-label{
-  position: absolute;
-   bottom: -179%;
-  left: 28%;
-}
-/*#chorus-rate{
-  position:absolute;
-  bottom: -72%;
-  left: -24%;
-}*/
-#chorus-feedback, #chorus-rate{
-  position:absolute;
-  bottom: -72%;
-  left: -24%;
-}
-.chorus-rate-label{
-  position: absolute;
-  bottom: -219%;
-  left: 32%;
-}
-/*#chorus-feedback{
-  position:absolute;
-  bottom: -25%;
-  left: -24%;
-}*/
-.chorus-feedback-label{
-  position: absolute;
-  bottom: -219%;
-  left: 15%;
-}
-#chorus-delay{
-  position:absolute;
-  bottom: -72%;
-  left: -29%;
-}
-.chorus-delay-label{
-  position: absolute;
-  bottom: -219%;
-  left: 22%;
-}
-#phaser-rate{
-position:absolute;
-bottom: -72%;
-left: -16%;
-}
-.phaser-rate-label{
-position: absolute;
-bottom: -219%;
-left: 39%;
-}
-#phaser-feedback{
-position:absolute;
-bottom: -72%;
-left: -24%;
-}
-.phaser-feedback-label{
-position: absolute;
-bottom: -219%;
-left: 15%;
-}
-#phaser-depth{
-position:absolute;
-bottom: -72%;
-left: -30%;
-}
-.phaser-depth-label{
-position: absolute;
-bottom: -219%;
-left: 22%;
-}
-
-#delay-rate{
-position:absolute;
-bottom: -72%;
-left: -22%;
-}
-.delay-rate-label{
-position: absolute;
-bottom: -219%;
-left: 35%;
-}
-#delay-feedback{
-position:absolute;
-bottom: -72%;
-left: -30%;
-}
-.delay-feedback-label{
-position: absolute;
-bottom: -219%;
-left: 9%;
-}
-#delay-wet{
-position:absolute;
-bottom: -72%;
-left: -30%;
-}
-.delay-wet-label{
-position: absolute;
-bottom: -219%;
-left: 27%;
-}
-
-/*Styling for Tremelo sliders*/
-#tremolo-rate{
-position:absolute;
-bottom: -78%;
-left: -24%;
-}
-.tremelo-rate-label{
-position: absolute;
-bottom: -219%;
-left: 31%;
-}
-#tremolo-intensity{
-position:absolute;
-bottom: -72%;
-left: -30%;
-}
-.tremelo-intensity-label{
-position: absolute;
-bottom: -219%;
-left: 13%;
-}
-
-#tremolo-phase{
-position:absolute;
-bottom: -72%;
-left: -30%;
-}
-.tremelo-phase-label{
-position: absolute;
-bottom: -219%;
-left: 21%;
-}
-
-/*=== Styling for Bitcrusher sliders===*/
-#bitcrusher-bits{
-  position:absolute;
-  bottom: -72%;
-  left: 6%;
-}
-.bitcrusher-bits-label{
-  position: absolute;
-  bottom: -219%;
-  left: 46%;
-}
-#bitcrusher-normfreq{
-  position:absolute;
-  bottom: -72%;
-  left: -1%;
-}
-.bitcrusher-frequency-label{
-  position: absolute;
-  bottom: -219%;
-  left: 37%;
-}
 
 
 #octave{
@@ -631,4 +315,17 @@ left: 21%;
   background: rgb(35.1%, 35.1%, 35.1%);
   color: white;
   cursor: pointer;
+}
+
+input[type=range][orient=vertical]
+{
+    writing-mode: bt-lr; 
+    -webkit-appearance: slider-vertical; 
+    width: 8px;
+    height: 155px;
+    padding: 0 5px;
+}
+
+.master-row{
+  margin-top: 30px;
 }
