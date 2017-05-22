@@ -1,5 +1,5 @@
 # Synth Lord
-[synthlord.herokuapp.com](synthlord.herokuapp.com)
+[synthlord.herokuapp.com](https://synthlord.herokuapp.com)
 
 [Project Presentation](https://docs.google.com/presentation/d/1e0f7rKEAZPsIJwfGvYbfDLbZQKeuijjZumg1z4KRRHw/edit#slide=id.p)
 
