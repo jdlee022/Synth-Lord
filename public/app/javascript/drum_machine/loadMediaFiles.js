@@ -21,26 +21,26 @@
 
 var bufferLoader;
 var bufferList = [
-		'https://s3.amazonaws.com/drumtracks/Drum1.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum2.mp3', 
-		'https://s3.amazonaws.com/drumtracks/Drum3.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum4.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum5.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum6.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum7.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum8.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum9.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum10.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum11.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum12.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum13.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum14.mp3',
-		'https://s3.amazonaws.com/drumtracks/Drum15.mp3', 
-        'https://s3.amazonaws.com/drumsounds/closed_hihat.wav',
-        'https://s3.amazonaws.com/drumsounds/kick.wav',
-        'https://s3.amazonaws.com/drumsounds/open_hihat.wav',
-        'https://s3.amazonaws.com/drumsounds/snare.wav',
-        'https://s3.amazonaws.com/drumsounds/tom.wav'
+		'/source-files/audio/Drum1.mp3',
+		'/source-files/audio/Drum2.mp3', 
+		'/source-files/audio/Drum3.mp3',
+		'/source-files/audio/Drum4.mp3',
+		'/source-files/audio/Drum5.mp3',
+		'/source-files/audio/Drum6.mp3',
+		'/source-files/audio/Drum7.mp3',
+		'/source-files/audio/Drum8.mp3',
+		'/source-files/audio/Drum9.mp3',
+		'/source-files/audio/Drum10.mp3',
+		'/source-files/audio/Drum11.mp3',
+		'/source-files/audio/Drum12.mp3',
+		'/source-files/audio/Drum13.mp3',
+		'/source-files/audio/Drum14.mp3',
+		'/source-files/audio/Drum15.mp3', 
+		'/source-files/audio/closed_hihat.wav',
+		'/source-files/audio/kick.wav',
+		'/source-files/audio/open_hihat.wav',
+		'/source-files/audio/snare.wav',
+		'/source-files/audio/tom.wav'
 		// ,'https://firebasestorage.googleapis.com/v0/b/synthlords-d67d0.appspot.com/o/drum%2Fdrum.wav?alt=media&token=1b836b7f-eef5-4503-bbaa-fd92b06cb3b3'
 	];
 
