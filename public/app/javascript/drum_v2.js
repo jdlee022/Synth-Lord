@@ -17,7 +17,7 @@ var currentSource, currentSampleId;
 /**
  * sourceArr_Track , sourceObj_Track, sampleId_Track contain only TRACKS
  */
-var sampleId_Track = ['Drum1', 'Drum2', 'Drum3', 'Drum4', 'Drum5', 'Drum6', 'Drum7', 'Drum8', 'Drum9', 'Drum10', 'Drum11', 'Drum12', 'Drum13', 'Drum14', 'Drum15', 'TakeOnMe'];
+var sampleId_Track = ['Drum1', 'Drum2', 'Drum3', 'Drum4', 'Drum5', 'Drum6', 'Drum7', 'Drum8', 'Drum9', 'Drum10', 'Drum11', 'Drum12', 'Drum13', 'Drum14', 'Drum15'];
 var sourceObj_Track = {}; sourceArr_Track = [];
 var currentSource_Track, currentSampleId_Track;
 
@@ -52,11 +52,11 @@ var App = {
 
     _sampleObjArr: function(){
         sampleId.forEach(function(id){
-            samples[id] = 'https://s3.amazonaws.com/drumsounds/' + id + '.wav';
+            samples[id] = '/source-files/audio/' + id + '.wav';
             sampleArray.push(samples[id]);
         });
         sampleId_Track.forEach(function(id){
-            samples[id] = 'https://s3.amazonaws.com/drumsounds/' + id + '.mp3';
+            samples[id] = '/source-files/audio/' + id + '.mp3';
             sampleArray.push(samples[id]);
         });
         //console.log("sampleArray", sampleArray);
@@ -113,7 +113,6 @@ function finishedLoading(sampleArray){
         'Drum13'       : sourceArr[17],
         'Drum14'       : sourceArr[18],
         'Drum15'       : sourceArr[19],
-        'TakeOnMe'     : sourceArr[20]
     }
 
      _createOptionElement();
@@ -278,8 +277,8 @@ function stopTrack(){
 function _createOptionElement(){
     $("#trackDropBar").html("");
     //console.log("createOptionElement()");
-    var placeholder = "<option id='drumTrackplaceholder' disabled selected='selected' class='drumTrack'>Select a drum track to start</option>";
-    $("#trackDropBar").append(placeholder);
+    // var placeholder = "<option id='drumTrackplaceholder' disabled selected='selected' class='drumTrack'>Select a drum track to start</option>";
+    // $("#trackDropBar").append(placeholder);
     for (var i = 0; i < sampleId_Track.length; i++){
         var optionHTML = "<option id='"+ sampleId_Track[i] +"' class='drumTrack'>" + sampleId_Track[i] + "</option>";
         $("#trackDropBar").append(optionHTML);
@@ -289,8 +288,8 @@ function _createOptionElement(){
 function _afterloading_createOptionElement(currentTrack){
     $("#trackDropBar").html("");
     //console.log("createOptionElement()");
-    var placeholder = "<option id='drumTrackplaceholder' disabled class='drumTrack'>Select a drum track to start</option>";
-    $("#trackDropBar").append(placeholder);
+    // var placeholder = "<option id='drumTrackplaceholder' disabled class='drumTrack'>Select a drum track to start</option>";
+    // $("#trackDropBar").append(placeholder);
     for (var i = 0; i < sampleId_Track.length; i++){
         var optionHTML;
         if (sampleId_Track[i] === currentTrack){

@@ -30,6 +30,10 @@ $(document).ready(function () {
             }));
         }
     });
+
+    if(!window.localStorage.getItem('visited')){
+        $("#welcome-modal").modal();
+    }
 });
 
 //creates the keyboard that is displayed in the html
@@ -173,7 +177,7 @@ function getSettings() {
                     dryLevel: parseFloat($("#convolver-dry").val()), //0 to 1+
                     wetLevel: parseFloat($("#convolver-wet").val()), //0 to 1+
                     level: parseFloat($("#convolver-level").val()), //0 to 1+, adjusts total output of both wet and dry
-                    impulse: "https://s3.amazonaws.com/synthlord/convolver-impulse.wav",
+                    impulse: window.location.hostname + '/source-files/audio/convolver-impulse.wav',
                     bypass: parseInt($("#convolver-bypass").attr('value'))
                 }
             }
@@ -311,13 +315,17 @@ $(".tuna-setting").change(function () {
 });
 
 /** Toggle modalOpen when the modal loads so that notes aren't played on key presses */
-$("#preset-modal").on('shown.bs.modal', function () {
+$("#preset-modal, #welcome-modal").on('shown.bs.modal', function () {
     $('#preset-name').focus();
     modalOpen = true;
 });
-$('#preset-modal').on('hidden.bs.modal', function () {
+$('#preset-modal, #welcome-modal').on('hidden.bs.modal', function () {
     modalOpen = false;
 });
+
+$("#welcome-close").click(function(){
+    window.localStorage.setItem('visited', true);
+})
 
 /** (in modal) Create new preset with current settings and post to synth db */
 $("#preset-save").click(function () {

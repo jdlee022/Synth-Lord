@@ -32,8 +32,6 @@ Drum keys are 45678.
 
 [Web Audio DAW](https://github.com/rserota/wad#configuring-reverb) - a library that utilizes the Web Audio API to help with sound manipulation.
 
-[Amazon Web Services S3](https://aws.amazon.com/s3/) - used to store our drum tracks.
-
 MySQL - used to store global presets that all users have access to.
 
 ## Screenshots
