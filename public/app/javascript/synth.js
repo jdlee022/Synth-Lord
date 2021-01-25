@@ -34,6 +34,11 @@ $(document).ready(function () {
     if(!window.localStorage.getItem('visited')){
         $("#welcome-modal").modal();
     }
+
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    if(!isChrome){
+        $(".input_range_wrapper").addClass("non_webkit_range_input");
+    }
 });
 
 //creates the keyboard that is displayed in the html

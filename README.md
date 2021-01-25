@@ -1,12 +1,11 @@
 # Synth Lord
-[synthlord.herokuapp.com](https://synthlord.herokuapp.com)
+[synthlord.herokuapp.com](https://synthlord.herokuapp.com){:target="_blank"}
 
-[Project Presentation](https://docs.google.com/presentation/d/1e0f7rKEAZPsIJwfGvYbfDLbZQKeuijjZumg1z4KRRHw/edit#slide=id.p)
+[Project Presentation](https://docs.google.com/presentation/d/1e0f7rKEAZPsIJwfGvYbfDLbZQKeuijjZumg1z4KRRHw/edit#slide=id.p){:target="_blank"}
 
 ## Description
-Synth Lord is a web based [synthesizer](https://en.wikipedia.org/wiki/Synthesizer) with MIDI support. Heroku currently does not support MIDI so in order to use your MIDI controller you must run the app locally by following the steps below.
+Synth Lord is a web based [synthesizer](https://en.wikipedia.org/wiki/Synthesizer){:target="_blank"} with MIDI support. Heroku currently does not support MIDI so in order to use your MIDI controller you must run the app locally by following the steps below.
 
-NOTE: Synth Lord has only been tested for Google Chrome compatibility so other browsers may not function as expected.
 
 ## Installation
 1. Download the master repository.
@@ -26,11 +25,11 @@ The piano keys start with asdfg.
 Drum keys are 45678.
 
 ## Technologies
-[Qwerty Hancock](https://stuartmemo.com/qwerty-hancock/) - used to generate a responsive keyboard for playing notes.
+[Qwerty Hancock](https://stuartmemo.com/qwerty-hancock/){:target="_blank"} - used to generate a responsive keyboard for playing notes.
 
-[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) - used for sound manipulation and visualization.
+[Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API){:target="_blank"} - used for sound manipulation and visualization.
 
-[Web Audio DAW](https://github.com/rserota/wad#configuring-reverb) - a library that utilizes the Web Audio API to help with sound manipulation.
+[Web Audio DAW](https://github.com/rserota/wad#configuring-reverb){:target="_blank"} - a library that utilizes the Web Audio API to help with sound manipulation.
 
 MySQL - used to store global presets that all users have access to.
 

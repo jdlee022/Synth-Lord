@@ -44,15 +44,18 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6 text-center">
+                                <div class="input_range_wrapper">
                                 <input class="setting vertical-slider" data-program="osc1_detune" data-update="update_osc1_detune" id="osc1-detune" max="50"
                                     min="-50" orient="vertical" step="1" type="range" value="0">
+                                    </div>
                                 <br>
                                 <label for="osc1-detune">Detune</label>
                             </div>
 
                             <div class="col-md-6 text-center">
+                                <div class="input_range_wrapper">
                                 <input class="setting vertical-slider" data-program="osc1_volume" data-update="update_osc1_volume" id="osc1-volume" max="1.0"
-                                    min="0.0" orient="vertical" step="0.015" type="range" value="1.0">
+                                    min="0.0" orient="vertical" step="0.015" type="range" value="1.0"></div>
                                 <br>
                                 <label for="osc1-volume">Volume</label>
                             </div>
@@ -75,14 +78,18 @@
                         </div>
                         <div class="row">
                             <div class="col-md-6">
+                                <div class="input_range_wrapper">
                                 <input class="setting vertical-slider" data-program="osc2_detune" data-update="update_osc2_detune" id="osc2-detune" max="50"
                                     min="-50" orient="vertical" step="1" type="range" value="0">
+                                    </div>
                                 <br>
                                 <label for="osc2-detune">Detune</label>
                             </div>
                             <div class="col-md-6">
+                                <div class="input_range_wrapper">
                                 <input class="setting vertical-slider" data-program="osc2_volume" data-update="update_osc2_volume" id="osc2-volume" max="1.0"
                                     min="0.0" orient="vertical" step="0.015" type="range" value="1.0">
+                                    </div>
                                 <br>
                                 <label for="osc2-volume">Volume</label>
                             </div>
@@ -95,14 +102,18 @@
                         <h3>Master</h3>
                         <div class="row master-row">
                             <div class="col-md-4 text-center">
+                                <div class="input_range_wrapper">
                                 <input class="setting vertical-slider" data-program="master_volume" data-update="update_master_volume" id="master-volume"
                                     max="0.75" min="0.0" orient="vertical" step="0.0001" type="range" value="0.27">
+                                    </div>
                                 <br>
                                 <label for="master-volume">Volume</label>
                             </div>
                             <div class="col-md-4 text-center">
+                                <div class="input_range_wrapper">
                                 <input class="setting tuna-setting vertical-slider" data-program="master_drive" data-update="update_master_drive" id="master-drive"
                                     max="0.95" min="0" orient="vertical" step="0.0001" type="range" value="0">
+                                    </div>
                                 <br>
                                 <label for="master-drive">Drive</label>
                             </div>
@@ -159,21 +170,26 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="filter_frequency" data-update="update_filter_frequency"
-                                                id="filter-frequency" max="2200" min="20" orient="vertical" step="0.01" type="range"
-                                                value="440">
+                                                id="filter-frequency" max="2200" min="20" orient="vertical" step="0.01" type="range" value="440">
+                                                </div>
                                             <br>
                                             <label for="filter-frequency">Frequency</label>
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="filter_q" data-update="update_filter_q" id="filter-q" max="100"
                                                 min="0.001" orient="vertical" step="0.001" type="range" value="1">
+                                                </div>
                                             <br>
                                             <label for="filter-q">Q</label>
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="filter_gain" data-update="update_filter_gain" id="filter-gain"
                                                 max="40.0" min="-40.0" orient="vertical" step="0.0001" type="range" value="0.0">
+                                                </div>
                                             <br>
                                             <label for="filter-gain">Gain</label>
                                         </div>
@@ -194,20 +210,26 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="chorus_rate" data-update="update_chorus_rate" id="chorus-rate"
                                                 max="8.0" min="0.1" orient="vertical" step="0.0001" type="range" value="1.5">
+                                                </div>
                                             <br>
                                             <label for="chorus-rate">Rate</label>
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="chorus_feedback" data-update="update_chorus_feedback" id="chorus-feedback"
                                                 max="0.9" min="0" orient="vertical" step="0.0001" type="range" value="0.2">
+                                                </div>
                                             <br>
                                             <label for="chorus-feedback">Feedback</label>
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="chorus_delay" data-update="update_chorus_delay" id="chorus-delay"
                                                 max="1.0" min="0.0" orient="vertical" step="0.0001" type="range" value="0.0045">
+                                                </div>
                                             <br>
                                             <label for="chorus-delay">Delay</label>
                                         </div>
@@ -228,20 +250,26 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="phaser_rate" data-update="update_phaser_rate" id="phaser-rate"
                                                 max="8.0" min="0.01" orient="vertical" step="0.0001" type="range" value="1.2">
+                                                </div>
                                             <br>
                                             <label for="phaser-rate">Rate</label>
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="phaser_feedback" data-update="update_phaser_feedback" id="phaser-feedback"
                                                 max="0.9" min="0" orient="vertical" step="0.0001" type="range" value="0.2">
+                                                </div>
                                             <br>
                                             <label for="phaser-feedback">Feedback</label>
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="phaser_depth" data-update="update_phaser_depth" id="phaser-depth"
                                                 max="1.0" min="0.0" orient="vertical" step="0.0001" type="range" value="0.3">
+                                                </div>
                                             <br>
                                             <label for="phaser-depth">Depth</label>
                                         </div>
@@ -254,18 +282,24 @@
                                     <h3>Delay</h3>
                                     <div class="row">
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="delay_rate" data-update="update_delay_rate" id="delay-rate"
                                                 max="1.0" min="0.0" orient="vertical" step="0.0001" type="range" value="0">
+                                                </div>
                                             <br> Rate
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="delay_feedback" data-update="update_delay_feedback" id="delay-feedback"
                                                 max="0.75" min="0" orient="vertical" step="0.0001" type="range" value="0.25">
+                                                </div>
                                             <br> Feedback
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="delay_wet" data-update="update_delay_wet" id="delay-wet"
                                                 max="1" min="0" orient="vertical" step="0.0001" type="range" value="0.25">
+                                                </div>
                                             <br> Wet
                                         </div>
                                     </div>
@@ -285,19 +319,24 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="tremolo_rate" data-update="update_tremolo_rate" id="tremolo-rate"
                                                 max="8.0" min="0.001" orient="vertical" step="0.0001" type="range" value="4">
+                                                </div>
                                             <br> Rate
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="tremolo_intensity" data-update="update_tremolo_intensity"
-                                                id="tremolo-intensity" max="1" min="0" orient="vertical" step="0.0001" type="range"
-                                                value="0.3">
+                                                id="tremolo-intensity" max="1" min="0" orient="vertical" step="0.0001" type="range" value="0.3">
+                                                </div>
                                             <br> Intensity
                                         </div>
                                         <div class="col-md-4 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="tremolo_phase" data-update="update_tremolo_phase" id="tremolo-phase"
                                                 max="180.0" min="0.0" orient="vertical" step="0.0001" type="range" value="0">
+                                                </div>
                                             <br> Phase
                                         </div>
                                     </div>
@@ -317,14 +356,17 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="bitcrusher_bits" data-update="update_bitcrusher_bits" id="bitcrusher-bits"
                                                 max="16.0" min="1.0" orient="vertical" step="0.0001" type="range" value="4">
+                                                </div>
                                             <br> Bits
                                         </div>
                                         <div class="col-md-6 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="bitcrusher_normfreq" data-update="update_bitcrusher_normfreq"
-                                                id="bitcrusher-normfreq" max="1" min="0.009" orient="vertical" step="0.0001"
-                                                type="range" value="0.1">
+                                                id="bitcrusher-normfreq" max="1" min="0.009" orient="vertical" step="0.0001" type="range" value="0.1">
+                                                </div>
                                             <br> Freq
                                         </div>
                                     </div>
@@ -344,28 +386,38 @@
                                     </div>
                                     <div class="row">
                                         <div class="offset-md-1 col-md-2 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="convolver_low" data-update="update_convolver_low" id="convolver-low"
                                                 max="22050" min="20" orient="vertical" step="0.0001" type="range" value="20">
+                                                </div>
                                             <br> Low
                                         </div>
                                         <div class="col-md-2 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="convolver_high" data-update="update_convolver_high" id="convolver-high"
                                                 max="22050" min="20" orient="vertical" step="0.0001" type="range" value="22050">
+                                                </div>
                                             <br> High
                                         </div>
                                         <div class="col-md-2 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="convolver_dry" data-update="update_convolver_dry" id="convolver-dry"
                                                 max="1" min="0" orient="vertical" step="0.0001" type="range" value="1">
+                                                </div>
                                             <br> Dry
                                         </div>
                                         <div class="col-md-2 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="convolver_wet" data-update="update_convolver_wet" id="convolver-wet"
                                                 max="1" min="0" orient="vertical" step="0.0001" type="range" value="1">
+                                                </div>
                                             <br> Wet
                                         </div>
                                         <div class="col-md-2 text-center">
+                                            <div class="input_range_wrapper">
                                             <input class="setting tuna-setting vertical-slider" data-program="convolver_level" data-update="update_convolver_level" id="convolver-level"
                                                 max="1" min="0" orient="vertical" step="0.0001" type="range" value="1">
+                                                </div>
                                             <br> Level
                                         </div>
                                     </div>

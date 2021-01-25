@@ -157,7 +157,6 @@ slider-label {
 .vertical-slider {
   -webkit-appearance: slider-vertical;
   height: 80px;
-  margin-top: 15px;
   padding: 0;
   width: 15px;
   cursor: pointer;
@@ -349,6 +348,21 @@ input[type="range"][orient="vertical"] {
   padding: 0 5px;
 }
 
+
+input[type=range]:focus {
+  outline: none;
+}
+
 .master-row {
   margin-top: 30px;
+}
+
+.input_range_wrapper{
+  display: inline-block;
+}
+
+.non_webkit_range_input{
+  background: #222;
+  border: 1px solid white;
+  border-radius: 5px;
 }
